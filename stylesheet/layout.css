@@ -1,0 +1,239 @@
+html, body {
+    min-height: 100%;
+    font-family: 'FiraCode-Regular', monospace;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* MAINSCREEN */
+
+
+.bgImg{
+    background-image: url(./images/mainBackground.svg);
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+}
+
+.mainScreen{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-items{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 35vh;
+    left: 35vw;
+    font-size: 1.2vw;  
+    z-index: 1;  
+}
+
+.menu-word{
+    text-decoration: none;
+}
+
+.menu-word, .menu-items{
+    color:rgba(158, 158, 158, 1);
+}
+
+.menu-rect{
+    width: 10vw;
+    position: absolute;
+    top: 34.5vh;
+    left: 34.5vw;
+    z-index: 0;
+}
+
+.contact {
+    display: none;
+    position: fixed;          
+    left: 5vw;               
+    bottom: 14vh;            
+    line-height: 1.2;
+    font-size: 1.2vw;
+    color: rgba(158, 158, 158, 1);
+    text-transform: uppercase;
+    z-index: 100;            
+    margin: 0;               
+    pointer-events: none;
+}
+
+.menu-items:hover .contact {
+    display: block;
+}
+
+
+.mainHeader {
+    padding-top: 2vh;
+}
+
+.menu-text01, .menu-text02 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    line-height: 1.2;
+    color:rgba(158, 158, 158, 1); 
+    text-transform: uppercase;
+}
+
+.hover-scheme{
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 2vw;
+    transform: translateX(-50%);
+    width: 35vw;
+    height: auto;
+    z-index: 1;
+}
+
+.mainHeader:hover .hover-scheme{
+    display: block
+}
+
+.floating-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-block {
+    position: absolute;
+    border: 0.1px solid rgba(158, 158, 158, 1);
+    padding: 0.2vw;
+    color: rgba(158, 158, 158, 1);
+    font-size: 1vw;
+    width: 15vw;
+    max-height: 20vh;
+    overflow: auto;
+    text-transform: uppercase;
+}
+
+.connection-line {
+    position: absolute;
+    background-color: rgba(158, 158, 158, 1);
+    height: 0.3px;
+    transform-origin: left center;
+    z-index: -1;
+    margin-left: 1.55vw;
+}
+
+
+/* HISTORY */
+
+
+.historyScreen{
+    min-height: 100%;
+    font-family: 'FiraCode-Regular', monospace;
+    text-transform: uppercase;
+}
+
+.hyHad {
+    display: none;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    padding-top: 2vh;
+}
+
+
+.hy-menu, .hy-back {
+    color: rgba(158, 158, 158, 1);
+    text-decoration: underline dotted;
+    text-underline-offset: 0.2vw;
+}
+
+.hy-menu {
+    padding-left: 5vw;
+    cursor: default;
+}
+
+.hy-back {
+    padding-right: 5vw;
+    cursor: pointer;
+}
+
+.scroll-zone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.hy-scroll {
+    height: 20000px; 
+}
+
+.hy-text {
+    position: fixed;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    color: rgba(158, 158, 158, 1);
+    font-family: 'FiraCode-Regular', monospace;
+    font-size: 1.312vw;
+    line-height: 1.2;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.word {
+    opacity: 0;
+    transition: opacity 0s;
+    margin-right: 0.3vw;
+    display: inline-block;
+}
+
+.word.visible {
+    opacity: 1;
+}
+
+.hy-render {
+    display: block;
+    position: absolute; 
+    width: 40vw;
+    height: auto;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 3;
+    justify-items: center;
+}
+
+.two-render{
+    display: block;
+    position: absolute; 
+    width: 75vw;
+    height: auto;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 4;
+    justify-items: center;    
+}
