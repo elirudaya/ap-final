@@ -266,6 +266,7 @@ body {
     justify-items: center;    
 }
 
+
 /* DETAILS */
 
 
@@ -291,16 +292,129 @@ body {
 .diContainer {
     position: absolute;
     display: flex;
+    /* !!! */
     flex-direction: column;
-    top: 10vh;
-    left: 5.5vw;
+    /* !!! */
     font-size: 1.2vw;  
     z-index: 1;  
+    color: rgba(158, 158, 158, 1);
 }
 
 .di-01{
-    color: rgba(158, 158, 158, 1);
     text-decoration: none;
 }
+
+
+/* NAVIGATION */
+
+
+.nvg-rect {
+    width: 20vw;
+    position: absolute;
+    left: 5vw;
+    top: 9vh;
+    z-index: 0;
+}
+
+.nvgContainer p {
+    position: absolute;
+    font-size: 1.2vw;  
+    z-index: 1;
+    color: rgba(158, 158, 158, 1);
+    cursor: pointer;
+}
+
+.nvg1 {
+    left: 9.5vh;
+    top: 10vh;
+}
+
+.nvg2 {
+    left: 9.5vh;
+    top: 16vh;
+}
+
+.nvg3 {
+    left: 9.5vh;
+    top: 22vh;
+}
+
+.nvg4 {
+    left: 9.5vh;
+    top: 28vh;
+}
+
+.nvg5 {
+    left: 9.5vh;
+    top: 34vh;
+}
+
+.nvg6 {
+    left: 28vh;
+    top: 10vh;
+}
+
+.nvg7 {
+    left: 28vh;
+    top: 16vh;
+}
+
+.nvg8 {
+    left: 28vh;
+    top: 22vh;
+}
+
+.nvg9 {
+    left: 28vh;
+    top: 28vh;
+}
+
+.nvg10 {
+    left: 28vh;
+    top: 34vh;
+}
+
+.nvg-pic {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  right: 20vw;
+  width: 20vw;
+  height: auto;
+  z-index: 1;
+}
+
+.nvg-pic.visible {
+  display: block;
+}
+
+.nvg-image {
+    display: block;
+    position: absolute;
+    top: 45vh;
+    left: 5vw;
+    width: 20vw;
+    height: auto;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nvg-text {
+    display: none;
+    position: fixed;          
+    left: 5vw;               
+    top: 72vh;            
+    line-height: 1.2;
+    font-size: 1.2vw;
+    color: rgba(158, 158, 158, 1);
+    z-index: 2;            
+    pointer-events: none;
+}
+
+.nvg-about:hover .nvg-text {
+    display: block;
+}
+
+
 
 
