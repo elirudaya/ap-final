@@ -2,11 +2,12 @@ html, body {
     min-height: 100%;
     font-family: 'FiraCode-Regular', monospace;
     text-transform: uppercase;
+    cursor: default;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     display: block;
     margin: 0 auto;
@@ -502,7 +503,6 @@ body {
     top: 45vh;
     left: 5vw;
     width: 20vw;
-    height: auto;
     z-index: 1;
     cursor: pointer;
 }
@@ -616,6 +616,34 @@ body {
 
 /* BOOK */
 
+
+.flatplan {
+    display: block;
+    position: absolute;
+    top: 14vh;
+    left: 5vw;
+    width: 20vw;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.pg-text {
+    display: none;
+    position: fixed;          
+    left: 5vw;               
+    top: 71vh;   
+    width: 20vw;         
+    line-height: 1.2;
+    font-size: 1.2vw;
+    color: rgba(158, 158, 158, 1);
+    z-index: 2;   
+    cursor: default;         
+}
+
+.pg-about:hover .pg-text {
+    display: block;
+}
+
 .arrows p{
     display: flex;
     position: absolute;
@@ -635,12 +663,89 @@ body {
 }
 
 .pg-img {
-    display: block;
+    display: none; 
     position: absolute;
-    top: 2vh;
+    top: 1vh;
     right: 12vw;
     width: 35vw;
     height: auto;
     z-index: 1;
     transform: rotate(90deg);
+}
+
+.pg-img:first-of-type {
+    display: block; 
+}
+
+/* SIZES */
+
+.ss01 {
+    display: block;
+    position: absolute;
+    top: 5vh;
+    left: 24vw;
+    width: 50vw;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.ss-click {
+    display: block;
+    position: absolute;
+    color: rgba(158, 158, 158, 1);
+    left: 47vw;
+    top: 47vh;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.cap1, .cap2,
+.cap3, .cap4,
+.ring, .cyl1,
+.cyl2, .cyl3 {
+    display: block;
+    position: absolute;
+    color: rgba(158, 158, 158, 1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.cap1 {
+    left: 45.5vw;
+    top: 22vh;
+}
+
+.cap2 {
+    left: 33vw;
+    top: 60vh;
+}
+
+.cap3 {
+    left: 58vw;
+    top: 60vh;
+}
+
+.cap4 {
+    left: 47vw;
+    top: 82vh;
+}
+
+.ring {
+    left: 75vw;
+    top: 50vh;
+}
+
+.cyl1 {
+    left: 60vw;
+    top: 35vh;
+}
+
+.cyl2 {
+    left: 30vw;
+    top: 35vh;
+}
+
+.cyl3 {
+    left: 45.6vw;
+    top: 68vh;
 }
