@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
     display: block;
     margin: 0 auto;
-    z-index: -1;
+    z-index: -5;
 }
 
 
@@ -21,7 +21,7 @@ body {
 .bgImg {
     position: absolute;
     height: 100vh;
-    z-index: -1;
+    z-index: -5;
 }
 
 .mainScreen {
@@ -30,7 +30,6 @@ body {
     overflow: hidden;
     display: flex;
     position: relative;
-    z-index: 2;
 }
 
 .menu-items {
@@ -89,6 +88,7 @@ body {
     margin-top: 5vh;
     line-height: 1.2;
     color:rgba(158, 158, 158, 1); 
+    z-index: 3;
 }
 
 .hover-scheme {

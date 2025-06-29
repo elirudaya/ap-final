@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+    .bgImg {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .mainScreen {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .mainHeader {
+        padding-top: 5vh;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu-text01, .menu-text02 {
+        margin-left: 0;
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .menu-items {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 5vh auto;
+        font-size: 4vw;
+        align-items: center;
+    }
+
+    .menu-rect {
+        display: none; 
+    }
+
+    .hover-scheme {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 90%;
+        margin: 2vh auto;
+        display: block !important; 
+        transform: none;
+    }
+
+    .contact {
+        position: static;
+        display: block;
+        margin-top: 3vh;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .floating-block {
+        width: 30vw;
+        font-size: 2vw;
+    }
+}
