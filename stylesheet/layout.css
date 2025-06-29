@@ -10,7 +10,6 @@ body {
     height: 100vh;
     overflow-x: hidden;
     display: block;
-    margin: 0 auto;
     z-index: -1;
 }
 
@@ -20,7 +19,7 @@ body {
 
 .bgImg {
     position: absolute;
-    height: 100vh;
+    height: 150vh;
     z-index: -1;
 }
 
