@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
     display: block;
     margin: 0 auto;
-    z-index: -5;
+    z-index: -1;
 }
 
 
@@ -21,7 +21,7 @@ body {
 .bgImg {
     position: absolute;
     height: 100vh;
-    z-index: -5;
+    z-index: -1;
 }
 
 .mainScreen {
