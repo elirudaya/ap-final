@@ -284,10 +284,8 @@ body {
 
 .diContainer p {
     position: absolute;
-    /* !!! */
     display: flex;
     flex-direction: column;
-    /* !!! */
     left: 6vw;
     z-index: 1;
     color: rgba(158, 158, 158, 1);
@@ -322,6 +320,98 @@ body {
     top: 28vh;
 }
 
+.diSub p{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    left: 28vw;
+    top: 9vh;
+    width: 20vw;
+    z-index: 1;
+    color: rgba(158, 158, 158, 1);
+    cursor: default;
+    text-align: justify;
+}
+
+.diSub p.visible {
+    display: flex;
+}
+
+.di-img {
+    display: none;
+    position: absolute;
+    top: 20vh;
+    right: 3vw;
+    width: 45vw;
+    height: auto;
+    z-index: 1;
+}
+
+.di-img.visible {
+    display: block; 
+}
+
+
+
+/* TECHNOLOGY */
+
+
+.tcContainer p{
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    text-decoration: underline dotted;
+    color: rgba(158, 158, 158, 1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tc1 {
+    left: 5vw;    
+}
+
+.tc2 {
+    left: 15vw;
+}
+
+.tc3 {
+    left: 23vw;
+}
+
+.tc4 {
+    left: 31vw;
+}
+
+.tcSub p{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    left: 5vw;
+    top: 15vh;
+    width: 33vw;
+    z-index: 1;
+    color: rgba(158, 158, 158, 1);
+    cursor: default;
+    text-align: justify;
+}
+
+.tcSub p.visible {
+    display: flex;
+}
+
+.tc-img {
+    display: none;
+    position: absolute;
+    top: 18vh;
+    right: 3vw;
+    width: 50vw;
+    height: auto;
+    z-index: 1;
+}
+
+.tc-img.visible {
+    display: block; 
+}
 
 /* NAVIGATION */
 
@@ -522,4 +612,35 @@ body {
     left: 20vw;
     top: 12vh;
 }
- 
+
+
+/* BOOK */
+
+.arrows p{
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    text-decoration: underline dotted;
+    color: rgba(158, 158, 158, 1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.left-ar {
+    left: 43vw;
+}
+
+.right-ar {
+    right: 2vw;
+}
+
+.pg-img {
+    display: block;
+    position: absolute;
+    top: 2vh;
+    right: 12vw;
+    width: 35vw;
+    height: auto;
+    z-index: 1;
+    transform: rotate(90deg);
+}

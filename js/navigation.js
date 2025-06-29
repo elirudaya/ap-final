@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { className: "nvg10", imgId: "nvg100" }
     ];
 
-    const allPics = document.querySelectorAll(".nvg-pic");
+    const allImages = document.querySelectorAll(".nvg-pic");
 
     buttons.forEach(({ className, imgId }) => {
         const trigger = document.querySelector(`.${className}`);
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (trigger && target) {
         trigger.addEventListener("click", () => {
-            allPics.forEach(pic => pic.classList.remove("visible"));
+            allImages.forEach(pic => pic.classList.remove("visible"));
             target.classList.add("visible");
         });
         }
