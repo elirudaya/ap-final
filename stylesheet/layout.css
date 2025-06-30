@@ -147,7 +147,10 @@ body {
 .sizesScreen,
 .bookScreen,
 .navigationScreen {
-    min-height: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
 }
 
 .historyScreen {
@@ -276,7 +279,6 @@ body {
 .spHad {
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
     width: 100%;
     padding-top: 2vh;
 }
@@ -422,71 +424,54 @@ body {
 
 /* NAVIGATION */
 
-
-.nvg-rect {
-    width: 20vw;
-    position: absolute;
-    left: 5vw;
-    top: 9vh;
-    z-index: 0;
-}
-
 .nvgContainer p {
     position: absolute;
-    font-size: 1.2vw;  
+    display: flex;
+    flex-direction: column;
+    left: 5vw;
     z-index: 1;
     color: rgba(158, 158, 158, 1);
     cursor: pointer;
 }
 
 .nvg1 {
-    left: 9.5vh;
     top: 10vh;
 }
 
 .nvg2 {
-    left: 9.5vh;
-    top: 16vh;
+    top: 13vh;
 }
 
 .nvg3 {
-    left: 9.5vh;
-    top: 22vh;
-}
-
-.nvg4 {
-    left: 9.5vh;
-    top: 28vh;
-}
-
-.nvg5 {
-    left: 9.5vh;
-    top: 34vh;
-}
-
-.nvg6 {
-    left: 28vh;
-    top: 10vh;
-}
-
-.nvg7 {
-    left: 28vh;
     top: 16vh;
 }
 
-.nvg8 {
-    left: 28vh;
+.nvg4 {
+    top: 19vh;
+}
+
+.nvg5 {
     top: 22vh;
 }
 
-.nvg9 {
-    left: 28vh;
+.nvg6 {
+    top: 25vh;
+}
+
+.nvg7 {
     top: 28vh;
 }
 
-.nvg10 {
-    left: 28vh;
+.nvg8 {
+    top: 31vh;
+}
+
+.nvg9 {
     top: 34vh;
+}
+
+.nvg10 {
+    top: 37vh;
 }
 
 .nvg-pic {
