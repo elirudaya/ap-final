@@ -140,7 +140,7 @@ body {
 /* HISTORY */
 
 
-.historyScreen, 
+ 
 .detailsScreen,
 .processScreen,
 .technologyScreen,
@@ -151,8 +151,7 @@ body {
 }
 
 .historyScreen {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     position: relative;
